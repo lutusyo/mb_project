@@ -1,7 +1,12 @@
 <!-- templates/home.html -->
-<h1>Prime care environment homepage</h1>
-<ul>
-    {% for post in all_posts_list %} 
-        <li>{{ post }}</li>
-    {% endfor %} 
-</ul>
+
+{% extends 'base.html' %}
+
+{% block content %} 
+    <h1>Prime care environment homepage</h1>
+    <ul>
+        {% for post in all_posts_list %} 
+            <li>{{ post }}</li>
+        {% endfor %} 
+    </ul>
+{% endblock content %} 
